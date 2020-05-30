@@ -1,1 +1,12 @@
-language: php
+language: generic
+
+deploy:
+  #
+  # Auto-deploys the theme to wordpress website on push to master branch
+  #
+  provider: script
+  skip_cleanup: true
+  script: ./scripts/deploy.sh
+  on:
+    branch: master
+    php: 7.0
