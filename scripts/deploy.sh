@@ -27,4 +27,4 @@ fi
 
 PROJECT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
-find ${PROJECT_ROOT} -type f -exec curl -u ${FTP_USERNAME}:${FTP_PASSWORD} --ftp-create-dirs -T {} ftp://${FTP_SERVER}/wp-content/themes/erinnern-gedenken-steinheim/{} \;
+find ${PROJECT_ROOT} -type f -exec curl --key /tmp/sftp_rsa -u ${FTP_USERNAME}:${FTP_PASSWORD} --ftp-create-dirs -T {} sftp://${FTP_SERVER}/wp-content/themes/erinnern-gedenken-steinheim/{} \;
