@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /index.php
     destination: /home/bitnami/apps/wordpress/htdocs/wp-content/themes/erinnern-gedenken-steinheim
