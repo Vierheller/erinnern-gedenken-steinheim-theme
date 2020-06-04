@@ -9,6 +9,8 @@
  * @package WP_Bootstrap_Starter
  */
 
+global $no_container;
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -57,7 +59,9 @@
             </nav>
         </div>
 	</header><!-- #masthead -->
+    <?php if(!$no_container): ?>
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
-                <?php endif; ?>
+    <?php endif; ?>
+    <?php endif; ?>

@@ -9,11 +9,15 @@
  * @package WP_Bootstrap_Starter
  */
 
+global $no_container;
+
 ?>
-<?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
+	<?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
+	<?php if(!$no_container): ?>
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</div><!-- #content -->
+	<?php endif; ?>
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
 		<div class="container pt-3 pb-3">
