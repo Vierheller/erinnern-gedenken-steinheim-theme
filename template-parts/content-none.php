@@ -28,7 +28,7 @@
 
 		else : ?>
 
-			<p><?php esc_html_e( 'Wir konnten wohl nichts zu diesem Thema finden. Vielleicht hilft die Suche?', 'wp-bootstrap-starter' ); ?></p>
+			<p><?php esc_html_e( 'Wir konnten wohl nichts zu diesem Thema finden. Vielleicht hilft eine Suche?', 'wp-bootstrap-starter' ); ?></p>
 			<?php
 				get_search_form();
 
