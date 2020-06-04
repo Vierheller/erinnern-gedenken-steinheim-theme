@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'wp-bootstrap-starter' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Wir konnten leider keine Beiträge finden', 'wp-bootstrap-starter' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -28,7 +28,7 @@
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp-bootstrap-starter' ); ?></p>
+			<p><?php esc_html_e( 'Wir konnten wohl nichts zu diesem Thema finden. Vielleicht hilft die Suche?', 'wp-bootstrap-starter' ); ?></p>
 			<?php
 				get_search_form();
 
