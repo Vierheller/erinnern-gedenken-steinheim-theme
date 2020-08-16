@@ -368,7 +368,7 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a 
 }
 
 .dropdown-menu {
-    min-width: 12.500rem;
+    min-width: 14.000rem;
 }
 
 .dropdown .open .dropdown-menu {
