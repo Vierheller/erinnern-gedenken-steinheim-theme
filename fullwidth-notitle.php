@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Komplette Breite
+* Template Name: Komplette Breite ohne Titel
  */
 
 global $no_container;
